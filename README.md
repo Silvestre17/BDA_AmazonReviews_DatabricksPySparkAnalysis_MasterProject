@@ -186,4 +186,4 @@ The project is organized into several Databricks notebooks, each focusing on a s
 
 <br>
 
-> **Note:** All notebooks were developed and executed in the **Databricks** environment. If you prefer not to run the notebooks interactively, you can find pre-executed HTML versions of each notebook, complete with their respective results, within the repository. This allows for easy viewing of the analysis and outputs without requiring a Databricks setup.
+> **Note:** All notebooks were developed and executed in the **Databricks** environment (except `3_Modelling_BDAProject_Group37_Colab.ipynb`). If you prefer not to run the notebooks interactively, you can find pre-executed HTML versions of each notebook, complete with their respective results, within the repository. This allows for easy viewing of the analysis and outputs without requiring a Databricks setup.
