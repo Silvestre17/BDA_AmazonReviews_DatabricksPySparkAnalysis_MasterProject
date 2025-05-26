@@ -1,0 +1,29 @@
+_/
+data/
+BDA_GroupW_Presentation.pptx
+BDA_GroupW_Report.docx
+
+# Created by .ignore support plugin (hsz.mobi)
+# Source: https://gist.github.com/MOOOWOOO/3cf91616c9f3bbc3d1339adfc707b08a
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# idea folder, uncomment if you don't need it
+.idea/
+
+# Zone.Identifier files
+**/*Zone.Identifier
+links.txt
+BDA_LiteratureReview.xlsx
+Collab/
+Versões/
