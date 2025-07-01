@@ -1,10 +1,14 @@
 # 🛍️ Modelling Amazon Tech Reviews for Consumer Insight 💻️
 
-Work developed for the **Big Data Analytics** course in the **Master's in Data Science and Advanced Analytics** at **NOVA IMS** (Spring Semester 2024-2025).
+<p align="center">
+    <a href="https://github.com/Silvestre17/BDA_AmazonReviews_DatabricksPySparkAnalysis_MasterProject">
+        <img src="https://www.strategicrevenue.com/wp-content/uploads/2024/10/amazon-security.jpg" alt="Amazon Reviews Project Banner" width="800">
+    </a>
+</p>
 
 <p align="center">
-    <a href="https://github.com/Silvestre17/BDA_Project_GroupW"> <!-- Placeholder: Replace with actual GitHub Repo link -->
-        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo">
+    <a href="https://github.com/Silvestre17/BDA_AmazonReviews_DatabricksPySparkAnalysis_MasterProject">
+        <img src="https://img.shields.io/badge/Project_Repo-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo">
     </a>
 </p>
 
@@ -12,7 +16,7 @@ Work developed for the **Big Data Analytics** course in the **Master's in Data S
 
 This project aims to analyse consumer purchasing behaviour by exploring user reviews from Amazon’s Electronics, Computers category between 2022 and 2023. 
 
-The dataset, sourced from  [McAuley Lab’s Amazon Reviews 2023 collection](https://amazon-reviews-2023.github.io/), includes over 571 million reviews. Leveraging the Databricks environment with Apache Spark as the Big Data processing engine and Transformer-based models, we performed sentiment and topic analysis, clustering of product reviews, and graph analysis to understand the competitiveness between products within this e-commerce sector and analyse consumer behaviour. 
+The dataset, sourced from  [McAuley Lab’s Amazon Reviews 2023 collection](https://amazon-reviews-2023.github.io/), includes over 571M reviews. Leveraging the Databricks environment with Apache Spark as the Big Data processing engine and Transformer-based models, we performed sentiment and topic analysis, clustering of product reviews, and graph analysis to understand the competitiveness between products within this e-commerce sector and analyse consumer behaviour. 
 
 Throughout the project, we relied on PySpark as our core API to interact with Spark components such as Spark SQL, MLlib, Streaming, and GraphFrames.
 
@@ -30,14 +34,16 @@ The primary objectives of this project are to:
 
 ## **📚 Context**
 
-The project focuses on applying Big Data tools and techniques to analyze a large real-world dataset.
+This project was developed for the **Big Data Analytics** course in the **[Master's in Data Science and Advanced Analytics](https://www.novaims.unl.pt/en/education/programs/postgraduate-programs-and-master-degree-programs/master-degree-program-in-data-science-and-advanced-analytics-with-a-specialization-in-data-science/)** program at **NOVA IMS**, during the **2nd Semester** of the 2024-2025 academic year.
 
-**Dataset Source**: The project utilizes the **Amazon Reviews 2023** dataset, specifically the Electronics category, focusing on Computer products. This dataset was collected by McAuley Lab and is available on [Amazon Reviews'23](https://amazon-reviews-2023.github.io/).
--   [Filtered Dataset Used (.zip)](https://drive.usercontent.google.com/download?id=1GFCbdpUkmb-9z3ZwlRd655MWB-brWiZO&export=download)
+<p align="center">
+    <a href="https://amazon-reviews-2023.github.io/"><img src="https://img.shields.io/badge/Dataset-Amazon_Reviews_2023-FF9900?style=for-the-badge&logo=amazon&logoColor=white" alt="Amazon Reviews 2023 Dataset"/></a>
+    <a href="https://drive.usercontent.google.com/download?id=1GFCbdpUkmb-9z3ZwlRd655MWB-brWiZO&export=download"><img src="https://img.shields.io/badge/Filtered_Data-Google_Drive-4285F4?style=for-the-badge&logo=google-drive&logoColor=white" alt="Filtered Dataset"/></a>
+</p>
 
-## **🏗️ Project Structure**
+## **🏗️ Project Workflow & Technologies**
 
-The project follows a structured approach, from data collection and understanding to modelling, analysis, and deriving insights.
+The project followed the **CRISP-DM** methodology, executed within a distributed computing environment.
 
 <p align="center">
     <img src="./img/ProjectSchema.png" alt="Project Flowchart" width="800" style="background-color: white;">
@@ -53,6 +59,7 @@ The project follows a structured approach, from data collection and understandin
         <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
         <a href="https://www.databricks.com/"><img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Databricks"></a>
         <a href="https://spark.apache.org/"><img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white" alt="Apache Spark"></a>
+        <a href="https://spark.apache.org/docs/latest/api/python/"><img src="https://img.shields.io/badge/PySpark-00A9FF?style=for-the-badge&logo=apache-spark&logoColor=white" alt="PySpark"></a>
     </p>
 
 2.  **Data Collection & Preprocessing (Notebook `0_DataCollection` & `1_BU&EDA`):** ⚙️
@@ -77,7 +84,7 @@ The project follows a structured approach, from data collection and understandin
     *   Analyze sentiment distribution across different topics/products.
 
     <p align="center">
-        <a href="https://huggingface.co/docs/transformers/index"><img src="https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face Transformers"></a>
+        <a href="https://huggingface.co/docs/transformers/index"><img src="https://img.shields.io/badge/🤗--Hugging--Face--Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face Transformers"></a>
         <a href="https://huggingface.co/citizenlab/twitter-xlm-roberta-base-sentiment-finetunned"><img src="https://img.shields.io/badge/TX--RoBERTa-FF6F61?style=for-the-badge&logo=huggingface&logoColor=white" alt="TX-RoBERTa"></a>
         <a href="https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"><img src="https://img.shields.io/badge/mDeBERTa-4F46E5?style=for-the-badge&logo=huggingface&logoColor=white" alt="mDeBERTa"></a>
     </p>
@@ -127,46 +134,25 @@ The project follows a structured approach, from data collection and understandin
 
 ## **📈 Key Results**
 
--   Successfully processed and analyzed a large subset of the Amazon Reviews 2023 dataset for the Electronics (Computers) category from 2022-2023.
--   Applied Transformer-based models (TX-RoBERTa and mDeBERTa) to classify review sentiment, creating a combined sentiment score for enhanced accuracy and consistency checking against user ratings.
--   Identified product topics and analyzed sentiment distribution across these topics.
--   Conducted graph analysis using PageRank and Label Propagation to reveal influential products/users and community structures within the review network.
--   Simulated streaming data processing to demonstrate real-time analytical capabilities.
--   The R² metric for clustering evaluation was 0.80, indicating a good proportion of variance explained by the clustering solution.
+-   Successfully processed and analyzed a large subset of the Amazon Reviews dataset.
+-   Applied advanced NLP models for sentiment and topic classification in a distributed environment.
+-   Identified influential products and user communities through graph analysis.
+-   The clustering solution achieved an **R² of 0.80**, indicating a strong separation and clear definition between the identified product/review clusters.
 
 ## **📚 Conclusion & Future Work**
 
-This project successfully leveraged Big Data tools, primarily Apache Spark within the Databricks environment, and advanced machine learning models to analyze consumer reviews and product interactions on Amazon. The sentiment analysis, topic modeling, clustering, and graph analysis provided valuable insights into consumer behavior and product competitiveness.
+This project demonstrates a robust, end-to-end Big Data analytics pipeline. The combination of Spark, advanced ML models, and graph analytics provided deep insights into consumer behavior and product competitiveness on Amazon.
 
-**Future Work could explore:**
-*   Incorporating more features into clustering and graph models.
-*   Building predictive models (e.g., sales prediction based on review trends).
+**Future work could include:**
+*   Building predictive models for sales forecasting based on review trends.
+*   Developing a product recommendation system using the clustering and graph analysis results.
 *   Expanding the analysis to other product categories or timeframes.
-*   Create a recommendation system based on sentiment and clustering analysis.
 
-Dive into our notebooks to see the data magic unfold! 🪄 But fair warning: your Amazon cart might start recommending itself after this... 🛒💸
-
-<br>
-
-## 👥 Team (Group 37)
-
-<p align="center">
-
-| **Member** | **Student Number** |
-|:----------:|:------------------:|
-| André Silvestre | 20240502 |
-| Filipa Pereira | 20240509 |
-| João Henriques | 20240499 |
-| Umeima Mahomed | 20240543 |
-
-</p>
-
-
-<br>
+Dive into our notebooks to see the data magic unfold! 🪄 Fair warning: your Amazon cart might just start recommending itself... 🛒💸
 
 ## **📂 Notebooks Structure**
 
-The project is organized into several Databricks notebooks, each focusing on a specific stage of the Big Data analysis pipeline:
+The project is organized into several Databricks notebooks, each focusing on a specific stage of the pipeline. Pre-executed HTML versions are available in the repository for easy viewing.
 
 0.  **Data Collection & Initial Setup**
     *   [`0_DataCollection_BDAProject_Group37_DataBricks.ipynb`](./0_DataCollection_BDAProject_Group37_DataBricks.ipynb)
@@ -187,3 +173,14 @@ The project is organized into several Databricks notebooks, each focusing on a s
 <br>
 
 > **Note:** All notebooks were developed and executed in the **Databricks** environment (except `3_Modelling_BDAProject_Group37_Colab.ipynb`). If you prefer not to run the notebooks interactively, you can find pre-executed HTML versions of each notebook, complete with their respective results, within the repository. This allows for easy viewing of the analysis and outputs without requiring a Databricks setup.
+
+Dive into our notebooks to see the data magic unfold! 🪄 But fair warning: your Amazon cart might start recommending itself after this... 🛒💸
+
+<br>
+
+## 👥 Team (Group 37)
+
+- **André Silvestre** (20240502)
+- **Filipa Pereira** (20240509)
+- **João Henriques** (20240499)
+- **Umeima Mahomed** (20240543)
